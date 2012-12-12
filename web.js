@@ -6,7 +6,7 @@ memjs = MemJS.create();
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  memjs.get("latest", function(value) {
+  memjs.get("latest", function(err, value) {
     if (value) {
       response.send(value.toString());
     } else {
