@@ -1,4 +1,4 @@
-# MemCachier Node.js Example
+# MemCachier Node.js Example App
 
 This is an example Node.js app that uses
 [MemCachier](http://www.memcachier.com) to cache values. This example
@@ -12,6 +12,12 @@ local dummy cache. MemCachier is currently only available with various
 cloud providers.
 
 Setting up MemCachier to work in Node is very easy.
+
+## Deploy to Heroku
+
+You can deploy this app yourself to Heroku to play with.
+
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ## Get involved!
 
