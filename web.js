@@ -17,8 +17,10 @@ app.get('/', function(request, response) {
 });
 
 app.get('/set/:value', function(request, response) {
-  memjs.set("latest", request.params.value);
-  response.redirect('/');
+  memjs.set("latest", request.params.value, function(err, success) {
+    if (err) { response.send(err); }
+    response.redirect('/');
+  });
 });
 
 var port = process.env.PORT || 3000;
