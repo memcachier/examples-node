@@ -1,7 +1,8 @@
+/*jshint unused: true, node: true */
+/*jslint unparam: true, node: true */
 var express = require('express');
-var MemJS = require("memjs").Client
-
-memjs = MemJS.create();
+var MemJS = require("memjs").Client;
+var memjs = MemJS.create();
 
 var app = express.createServer(express.logger());
 
@@ -12,7 +13,7 @@ app.get('/', function(request, response) {
     } else {
       response.send('No value yet');
     }
-  })
+  });
 });
 
 app.get('/set/:value', function(request, response) {
