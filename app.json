@@ -1,8 +1,10 @@
 {
   "name": "MemCachier Node.js Example App",
   "description": "Node.js app using express framework illustrating how to use MemCachier to cache computations",
-  "repository": "https://github.com/memcachier/examples-node",
-  "logo": "https://www.memcachier.com/assets/logo-large.png",
   "keywords": ["nodejs", "node", "express", "memcache", "memcachier", "caching" ],
+  "logo": "https://www.memcachier.com/assets/logo-large.png",
+  "image": "heroku/nodejs",
+  "website": "https://www.memcachier.com",
+  "repository": "https://github.com/memcachier/examples-node",
   "addons": [ "memcachier" ]
 }
