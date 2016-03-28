@@ -11,13 +11,13 @@ app.get('/', function(request, response) {
     if (value) {
       response.send(value.toString());
     } else {
-      response.send('No value yet');
+      response.send('No value set yet, use URL `/set/:value` to set');
     }
   });
 });
 
 app.get('/set/:value', function(request, response) {
-  memjs.set("latest", request.params.value, function(err, success) {
+  memjs.set("latest", request.params.value, function(err) {
     if (err) { response.send(err); }
     response.redirect('/');
   });
