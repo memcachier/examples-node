@@ -2,7 +2,7 @@
 
 This is an example Node.js app that uses
 [MemCachier](http://www.memcachier.com) to cache values. This example
-is written with node 0.6 and the express framework.
+is written with node 0.12.x and the express framework.
 
 You can view a working version of this app
 [here](http://memcachier-examples-node.herokuapp.com).
