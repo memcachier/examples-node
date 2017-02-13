@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 MemCachier Node.js Example
+  hr
+
+  h3 Error Occurred:
+  strong= error.status
+  pre #{error.stack}

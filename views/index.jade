@@ -1,0 +1,21 @@
+extends layout
+
+block content
+  h1 MemCachier Node.js Example
+  hr
+
+  h3 Current Value
+  div
+    strong Key: 
+    span example-key
+  div
+    strong Value: 
+    span= value
+
+  h3 Set New Value
+  form.form-inline(action='/set', method='POST')
+    .form-group
+      .input-group
+        .input-group-addon New Value
+        input.form-control(type='text', id='value', name='value', placeholder='Value')
+        button(class='btn btn-primary', type='submit', style='margin-left:8px;') Set

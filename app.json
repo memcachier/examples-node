@@ -8,3 +8,4 @@
   "repository": "https://github.com/memcachier/examples-node",
   "addons": [ "memcachier" ]
 }
+
